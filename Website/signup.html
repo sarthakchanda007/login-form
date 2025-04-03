@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <script type = "module" src = "js/firebase-signup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Sign up</h1>
+            <div class="social-icons">
+                <button  type="submit" class="social-btn"><img src="images/facebook-icon.png" alt="Facebook" id="facebook"></button>
+                <button  type="submit" class="social-btn"><img src="images/google-icon.png" alt="Google" id="google"></button>
+                <button  type="submit" class="social-btn"><img src="images/microsoft-logo.png" alt="Microsoft" id="microsoft"></button>
+            </div>
+            <p class="divider">or do via email</p>
+            <form id="signup-form">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Your name">
+                    <p class="error-message" id="name-error"></p>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email address">
+                    <p class="error-message" id="email-error"></p>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="phone" placeholder="Phone Number">
+                    <p class="error-message" id="phone-error"></p>
+                </div>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Password">
+                    <span class="eye-icon" onclick="togglePassword()">👁️</span>
+                </div>
+                <p class="error-message" id="password-error"></p>
+                <button type="submit" id="signup-btn">Sign up</button>
+            </form>
+            <p class="login-link">Have an account? <a href="login.html">Sign In</a></p>
+        </div>
+        <div class="image-section">
+            <img src="" >
+        </div>
+    </div>
+
+</body>
+</html>
